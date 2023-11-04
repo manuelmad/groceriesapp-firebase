@@ -29,9 +29,16 @@ html {
 	--black: black;
 }
 
+/* body {
+	position: relative;
+	overflow: hidden;
+} */
+
 main {
 	width: 100%;
 	font-size: var(--medium-font);
+	/* position: relative;
+	overflow: hidden; */
 }
 
 section {
@@ -39,10 +46,109 @@ section {
 	margin: 0 auto;
 }
 
+/* .list-section {
+	position: relative;
+	overflow: hidden;
+} */
+
+.imgs-container {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	overflow: hidden;
+	z-index: -1;
+}
+
+.banana-img {
+	/* width: 25rem;
+	opacity: 0.2;
+	position: absolute;
+	top: -1rem;
+	left: -8rem; */
+	opacity: 0.2;
+	 /* Since the image is an <img> element and not a background-image,
+  we don't have to worry about it shrinking, but we do need to
+  explicitly make it no smaller than the containing <div>. */
+  /* min-width: 100%; */
+  width: 25rem;
+  
+  /* Don't get in the way of positioning other elements. */
+  position: absolute;
+  
+  /* Move the left edge of the image to the center of the <div>, then
+  shift it back by half the width of the <img>. Result: centered
+  image. */
+  left: 10%;
+  top: 5%;
+  transform: translateX(-50%);
+  
+  /* It's supposed to be a background image, so put it behind other
+  content. */
+  z-index: -1;
+}
+
+.tomato-img {
+	/* width: 25rem;
+	opacity: 0.2;
+	position: absolute;
+	top: 3rem;
+	left: 20rem; */
+	opacity: 0.2;
+		 /* Since the image is an <img> element and not a background-image,
+  we don't have to worry about it shrinking, but we do need to
+  explicitly make it no smaller than the containing <div>. */
+  /* min-width: 100%; */
+  width: 15rem;
+  
+  /* Don't get in the way of positioning other elements. */
+  position: absolute;
+  
+  /* Move the left edge of the image to the center of the <div>, then
+  shift it back by half the width of the <img>. Result: centered
+  image. */
+  left: 80%;
+  top: 10%;
+  transform: translateX(-50%);
+  
+  /* It's supposed to be a background image, so put it behind other
+  content. */
+  z-index: -1;
+}
+
+.cheese-img {
+
+	opacity: 0.8;
+		 /* Since the image is an <img> element and not a background-image,
+  we don't have to worry about it shrinking, but we do need to
+  explicitly make it no smaller than the containing <div>. */
+  /* min-width: 100%; */
+  width: 25rem;
+  
+  /* Don't get in the way of positioning other elements. */
+  position: absolute;
+  
+  /* Move the left edge of the image to the center of the <div>, then
+  shift it back by half the width of the <img>. Result: centered
+  image. */
+  left: 30%;
+  top: 60%;
+  transform: translateX(-50%);
+  
+  /* It's supposed to be a background image, so put it behind other
+  content. */
+  z-index: -1;
+}
+
 .list-section h1 {
-	text-align: center;
+	height: 5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin: 4rem 0 2rem;
 	font-size: var(--xlarge-font);
+	background-color: var(--orange);
+	border-radius: 1rem;
+	color: var(--white);
 }
 
 .list-section span {

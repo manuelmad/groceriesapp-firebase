@@ -1,0 +1,8 @@
+.imgs-container {
+	width: 80rem;
+    left: calc(50% - 40rem);
+}
+
+.banana-img {
+    left: 20%;
+}

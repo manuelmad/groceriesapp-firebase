@@ -69,45 +69,6 @@ function addProductsToList(data) {
 
 }
 
-let products_database = {
-	"Queso pasteurizado": 0,
-	"Yogurt pequeño": 0,
-	"Pan francés": 0,
-	"Jamón": 0,
-	"Pechuga de pollo": 0,
-	"Plátano": 0,
-	"Cambur": 0,
-	"Cebolla": 0,
-	"Tomate": 0,
-	"Papa": 0,
-	"Huevos (1/2 cartón)": 0,
-	"Huevos (1 cartón)": 0,
-	"Cat Chow (500 grs.)": 0,
-	"Cat Chow (1 kg.)": 0,
-	"Gatsy (500 grs.)": 0,
-	"Gatsy (1 kg.)": 0,
-	"Mirringo (500 grs.)": 0,
-	"Mirringo (1 kg.)": 0,
-	"Aregato (3 kg.)": 0,
-	"Aregato (6 kg.)": 0,
-};
-
-let keysArray = Object.keys(products_database);
-
-let orderedKeysArray = keysArray.sort( (a, b) => {
-	if(a.toLowerCase() < b.toLowerCase()) {
-		return -1;
-	}
-	if(a.toLowerCase() > b.toLowerCase()) {
-		return 1;
-	}
-	return 0;
-
-	// Esto puede hacerse también así, para que no distinga entre mayúsculas y minúsculas:
-	//a.localeCompare(b);
-});
-
-
 // Event so the update/add modal is shown
 shores_list.addEventListener('change', (event)=> {
 	const currentValue = event.target.value;

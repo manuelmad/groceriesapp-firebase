@@ -1,0 +1,13 @@
+.imgs-container {
+	width: 60rem;
+    left: calc(50% - 30rem);
+}
+
+.banana-img {
+    left: 18%;
+}
+
+.tomato-img {
+    width: 25rem;
+    left: 75%;
+}
