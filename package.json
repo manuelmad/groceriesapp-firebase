@@ -1,0 +1,20 @@
+{
+  "name": "groceries-list",
+  "version": "1.0.0",
+  "description": "A web app to create a list of groceries and share it",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "groceries",
+    "web",
+    "app",
+    "firebase"
+  ],
+  "author": "manuelmad",
+  "license": "MIT",
+  "dependencies": {
+    "firebase": "^10.5.2"
+  }
+}

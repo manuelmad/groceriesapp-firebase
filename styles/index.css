@@ -1,0 +1,176 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: 'Playpen Sans', cursive;
+	background-color: var(--light-orange);
+}
+
+:root {
+	--small-font: 1.2rem;
+	--medium-font: 1.4rem;
+	--large-font: 1.8rem;
+	--xlarge-font: 2.2rem;
+
+	--background-shadow: rgba(32, 35, 41, 0.8);
+	--input-color: rgb(221, 219, 219);
+	--dark-yellow: #f4f500;
+	--light-yellow: #ffff20;
+	--dark-green: #74f400;
+	--light-green: #8bff1f;
+	--very-light-green:#befa85;
+	--orange: #ff8000;
+	--light-orange: #fbedde;
+	--white: white;
+	--black: black;
+}
+
+main {
+	width: 100%;
+	font-size: var(--medium-font);
+}
+
+section {
+	width: 30rem;
+	margin: 0 auto;
+}
+
+.list-section h1 {
+	text-align: center;
+	margin: 4rem 0 2rem;
+	font-size: var(--xlarge-font);
+}
+
+.list-section span {
+	display: block;
+}
+
+#shores_list {
+	width: 100%;
+	height: 4rem;
+	border: 0.4rem solid var(--orange);
+	border-radius: 0.5rem;
+	margin-top: 1rem;
+}
+
+.selection-section {
+	margin-top: 4rem;
+	border: 0.4rem solid var(--orange);
+	border-radius: 1rem;
+	background-color: var(--white);
+	padding: 2rem 0;
+}
+
+.selection-section h2 {
+	text-align: center;
+	font-size: var(--large-font);
+}
+
+.quantity-modal {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: var(--background-shadow);
+	width: 100%;
+	height: 100vh;
+}
+
+.quantity-modal div {
+	width: 30rem;
+	height: 22rem;
+	background-color: var(--white);
+	margin: 0 auto;
+	position: absolute;
+	top: calc(50vh - 11rem);
+	left: calc(50vw - 15rem);
+	border-radius: 0.5rem;
+	padding: 1rem;
+	font-size: var(--small-font);
+}
+
+.quantity-modal div p:nth-child(2) {
+	text-align: center;
+	margin-top: 1rem;
+}
+
+.quantity-modal input {
+	width: 6rem;
+	height: 3rem;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	margin-left: 0.5rem;
+}
+
+.quantity-modal button {
+	width: 28rem;
+	height: 4rem;
+	border-radius: 0.5rem;
+	margin-top: 1rem;
+	cursor: pointer;
+	background-color: var(--white);
+	border: 0.3rem solid var(--orange);
+	font-weight: bold;
+}
+
+.quantity-modal p button:nth-child(3) {
+	margin-top: 3rem;
+	background-color: var(--orange);
+	color: var(--white);
+	border: none;
+}
+
+.quantity-modal p button:nth-child(3):active {
+	background-color: var(--dark-green);
+	color: var(--black);
+}
+
+.quantity-modal span {
+	margin-left: 0.5rem;
+}
+
+#selection_list {
+	min-height: 10rem;
+	padding: 1rem;
+}
+
+#selection_list li {
+	background-color: var(--very-light-green);
+	border-radius: 0.5rem;
+	min-height: 5rem;
+	padding: 0.5rem;
+	margin-top: 1rem;
+	display: grid;
+	gap: 0.4rem;
+	grid-template-columns: 1fr 15fr 1fr;
+	text-align: start;
+	list-style: none;
+	align-content: center;
+}
+
+.red-font {
+	color: red;
+	font-weight: bold;
+}
+
+.x-button__container {
+	text-align: end;
+	color: red;
+	cursor: pointer;
+}
+
+/* .send-section {
+	text-align: center;
+}
+
+#send_list_btn {
+	width: 25rem;
+	height: 3rem;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	margin-top: 4rem;
+} */
