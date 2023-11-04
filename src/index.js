@@ -30,6 +30,13 @@ function addProductsToList(data) {
 	productsArray = [];
 	shores_list.innerHTML = "";
 
+	// Adding a default option to the select so it's the first one to see
+	let defaultOption = document.createElement('option');
+	defaultOption.innerText = "--------";
+	defaultOption.value = "default";
+	shores_list.appendChild(defaultOption);
+
+	// Add an option to the select for every document in the database
 	data.forEach(item => {
 		const product = item.data();
 		console.log(product["name"]);
@@ -75,7 +82,11 @@ function addProductsToList(data) {
 shores_list.addEventListener('change', (event)=> {
 	const currentValue = event.target.value;
 
-	// console.log(value);
+	// Stop the process if the first option (default) is selected
+	if(currentValue == "default") {
+		return;
+	}
+
 	div.innerHTML = "";
 
 	let div2 = document.createElement('div');

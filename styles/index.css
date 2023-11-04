@@ -7,7 +7,7 @@
 html {
 	font-size: 62.5%;
 	font-family: 'Playpen Sans', cursive;
-	background-color: var(--light-orange);
+	/* background-color: var(--light-orange); */
 }
 
 :root {
@@ -71,7 +71,7 @@ opacity: 0.2;
 }
 
 .cheese-img {
-	opacity: 0.8;
+	opacity: 0.5;
   width: 25rem;
   position: absolute;
   left: 40%;
@@ -85,21 +85,22 @@ opacity: 0.2;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 4rem 0 2rem;
+	margin: 4rem 0 3rem;
 	font-size: var(--xlarge-font);
-	background-color: var(--orange);
 	border-radius: 1rem;
 	color: var(--white);
+	background: radial-gradient(circle at 10% 20%, rgb(228, 118, 0) 0%, rgb(247, 189, 2) 90%);
 }
 
 .list-section span {
 	display: block;
+	font-weight: bold;
 }
 
 #shores_list {
 	width: 100%;
 	height: 4rem;
-	border: 0.4rem solid var(--orange);
+	border: 0.2rem solid var(--input-color);
 	border-radius: 0.5rem;
 	margin-top: 1rem;
 	font-size: var(--medium-font);
@@ -107,9 +108,8 @@ opacity: 0.2;
 
 .selection-section {
 	margin-top: 4rem;
-	border: 0.4rem solid var(--orange);
 	border-radius: 1rem;
-	background-color: var(--white);
+	background: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
 	padding: 2rem 0;
 }
 
@@ -126,8 +126,6 @@ opacity: 0.2;
 	background-color: var(--background-shadow);
 	width: 100%;
 	height: 100vh;
-	/* justify-content: center;
-	align-items: center; */
 }
 
 .quantity-modal div, .add-modal div {
@@ -135,13 +133,9 @@ opacity: 0.2;
 	height: 22rem;
 	background-color: var(--white);
 	margin: 0 auto;
-	/* position: absolute;
-	top: calc(50vh - 11rem);
-	left: calc(50vw - 15rem); */
 	border-radius: 0.5rem;
 	padding: 1rem;
 	font-size: var(--medium-font);
-	/* justify-self: center; */
 	align-self: center;
 }
 
@@ -210,6 +204,11 @@ opacity: 0.2;
 	color: var(--black);
 }
 
+.quantity-modal p button:nth-child(4):active, #new_product_cancel:active {
+	background-color: var(--input-color);
+	border: none;
+}
+
 .quantity-modal span {
 	margin-left: 0.5rem;
 }
@@ -220,8 +219,8 @@ opacity: 0.2;
 }
 
 #selection_list li {
-	background-color: var(--very-light-green);
-	border-radius: 0.5rem;
+	background-color: var(--white);
+	border-radius: 2rem;
 	min-height: 5rem;
 	padding: 0.5rem;
 	margin-top: 1rem;
@@ -236,6 +235,7 @@ opacity: 0.2;
 .red-font {
 	color: red;
 	font-weight: bold;
+	font-size: var(--large-font);
 }
 
 .x-button__container {
@@ -244,10 +244,17 @@ opacity: 0.2;
 	align-items: center;
 	color: red;
 	cursor: pointer;
+	margin-right: 0.2rem;
 }
 
 .add-product__section{
 	text-align: center;
+}
+
+.add-product__section p {
+	margin-top: 17rem;
+	border-top: 0.2rem solid var(--orange);
+	padding-top: 2rem;
 }
 
 #add_product_btn {
@@ -255,9 +262,14 @@ opacity: 0.2;
 	height: 4rem;
 	border-radius: 0.5rem;
 	cursor: pointer;
-	margin-top: 17rem;
-	background-color: var(--dark-green);
-	border: 0.3rem solid var(--orange);
+	/* margin-top: 17rem; */
+	background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
+	color: var(--white);
+	border: none;
 	font-weight: bold;
+}
+
+#add_product_btn:active {
+	background: var(--white);
 	color: var(--black);
 }
