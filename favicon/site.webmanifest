@@ -1,0 +1,20 @@
+{
+    "name":"Groceries App",
+    "short_name":"Groceries App",
+    "icons":
+        [
+            {
+                "src":"/android-chrome-192x192.png",
+                "sizes":"192x192",
+                "type":"image/png"
+            },
+            {
+                "src":"/android-chrome-512x512.png",
+                "sizes":"512x512",
+                "type":"image/png"
+            }
+        ],
+    "theme_color":"#413225",
+    "background_color":"#413225",
+    "display":"standalone"
+}
