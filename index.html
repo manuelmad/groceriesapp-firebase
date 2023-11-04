@@ -49,15 +49,15 @@
 				</div>
 			</article>
 		</section>
-		<!-- <section class="send-section">
+		<section class="add-product__section">
 			<article>
 				<div>
 					<p>
-						<button id="send_list_btn">Enviar lista</button>
+						<button id="add_product_btn">Agregar producto a la base de datos</button>
 					</p>
 				</div>
 			</article>
-		</section> -->
+		</section>
 	</main>
 	<div class="quantity-modal">
 		<!-- Analizar si coloco aquí los elementos del modal o si los crearé con JS
@@ -65,7 +65,26 @@
 		 -->
 	</div>
 	<div class="add-modal">
-
+		<div>
+			<p>Escriba el nombre del producto que desea agregar a la base de datos:</p>
+			<p><input type="text" placeholder="Nombre del producto" id="new_product_name"></p>
+			<p>Elija la unidad de medida del producto:</p>
+			<p>
+				<select name="" id="new_product_measurement">
+					<option value="grs">grs.</option>
+					<option value="kg">kg.</option>
+					<option value="unidad(es)">unidad(es)</option>
+				</select>
+			</p>
+			<p>Ingrese cantidad de unidades del producto (opcional):</p>
+			<p><input type="number" id="new_product_quantity"></p>
+			<p>
+				<button id="new_product_btn">Agregar producto</button>
+			</p>
+			<p>
+				<button id="new_product_cancel">Cancelar</button>
+			</p>
+		</div>
 	</div>
 	<footer></footer>
 	<script type="module" src="./src/index.js"></script>

@@ -1,3 +1,4 @@
+import './addProduct.js';
 import { collection, onSnapshot, doc, updateDoc } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
 
 import { db } from "./firebase.js";
@@ -16,7 +17,7 @@ const x_icon = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" f
 </svg>`;
 
 //let currentProduct;
-let productsArray = [];
+export let productsArray = [];
 
 // Listen to the current collection and get changes everytime a document is updated, created or deleted
 onSnapshot(productsCollection, (snapshot)=>{

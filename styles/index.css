@@ -27,12 +27,13 @@ html {
 	--light-orange: #fbedde;
 	--white: white;
 	--black: black;
+	--background-brown: #413225;
 }
 
 main {
 	width: 100%;
 	font-size: var(--medium-font);
-	padding-bottom: 4rem;
+	padding-bottom: 1rem;
 }
 
 section {
@@ -117,7 +118,7 @@ opacity: 0.2;
 	font-size: var(--large-font);
 }
 
-.quantity-modal {
+.quantity-modal, .add-modal {
 	display: none;
 	position: absolute;
 	top: 0;
@@ -129,7 +130,7 @@ opacity: 0.2;
 	align-items: center; */
 }
 
-.quantity-modal div {
+.quantity-modal div, .add-modal div {
 	width: 30rem;
 	height: 22rem;
 	background-color: var(--white);
@@ -144,6 +145,10 @@ opacity: 0.2;
 	align-self: center;
 }
 
+.add-modal div {
+	height: 45rem;
+}
+
 .quantity-modal div p:first-child span {
 	color: red;
 }
@@ -153,7 +158,20 @@ opacity: 0.2;
 	margin-top: 1rem;
 }
 
-.quantity-modal input {
+.add-modal div p:nth-child(3), .add-modal div p:nth-child(5) {
+	margin-top: 2rem;
+}
+
+.add-modal div p:nth-child(2),
+.add-modal div p:nth-child(4),
+.add-modal div p:nth-child(6),
+.add-modal div p:nth-child(7),
+.add-modal div p:nth-child(8) {
+	text-align: center;
+	margin-top: 1rem;
+}
+
+.quantity-modal input, #new_product_quantity {
 	width: 6rem;
 	height: 3rem;
 	border-radius: 0.5rem;
@@ -161,7 +179,15 @@ opacity: 0.2;
 	margin-left: 0.5rem;
 }
 
-.quantity-modal button {
+#new_product_name, #new_product_measurement {
+	width: 28rem;
+	height: 3rem;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	margin-left: 0.5rem;
+}
+
+.quantity-modal button, .add-modal button {
 	width: 28rem;
 	height: 4rem;
 	border-radius: 0.5rem;
@@ -172,14 +198,14 @@ opacity: 0.2;
 	font-weight: bold;
 }
 
-.quantity-modal p button:nth-child(3) {
+.quantity-modal p button:nth-child(3), #new_product_btn {
 	margin-top: 3rem;
 	background-color: var(--orange);
 	color: var(--white);
 	border: none;
 }
 
-.quantity-modal p button:nth-child(3):active {
+.quantity-modal p button:nth-child(3):active, #new_product_btn:active {
 	background-color: var(--dark-green);
 	color: var(--black);
 }
@@ -220,14 +246,18 @@ opacity: 0.2;
 	cursor: pointer;
 }
 
-/* .send-section {
+.add-product__section{
 	text-align: center;
 }
 
-#send_list_btn {
-	width: 25rem;
-	height: 3rem;
+#add_product_btn {
+	width: 28rem;
+	height: 4rem;
 	border-radius: 0.5rem;
 	cursor: pointer;
-	margin-top: 4rem;
-} */
+	margin-top: 17rem;
+	background-color: var(--dark-green);
+	border: 0.3rem solid var(--orange);
+	font-weight: bold;
+	color: var(--black);
+}
