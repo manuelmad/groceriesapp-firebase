@@ -79,7 +79,7 @@ shores_list.addEventListener('change', (event)=> {
 	let div2 = document.createElement('div');
 
 	let p = document.createElement('p');
-	p.innerHTML = `Por favor, indique la cantidad de ${currentValue} que desea comprar:</br>`;
+	p.innerHTML = `Por favor, indique la cantidad de <span>${currentValue}</span> que desea comprar:</br>`;
 
 	let p2 = document.createElement('p');
 
