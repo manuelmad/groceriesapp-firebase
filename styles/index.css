@@ -75,7 +75,7 @@ opacity: 0.2;
   width: 25rem;
   position: absolute;
   left: 40%;
-  top: 60%;
+  bottom: -2rem;
   transform: translateX(-50%);
   z-index: -1;
 }
@@ -249,6 +249,7 @@ opacity: 0.2;
 
 .add-product__section{
 	text-align: center;
+	position: relative;
 }
 
 .add-product__section p {
